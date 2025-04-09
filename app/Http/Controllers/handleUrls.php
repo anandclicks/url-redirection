@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 class handleUrls extends Controller
 {
     function handleUrl($url){
+
+        dd($url);
         $entry = Url::where('url', '/test/' . $url)->first();
         if($entry && $entry->viewPath){
             return view($entry->viewPath);

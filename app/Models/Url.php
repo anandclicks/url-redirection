@@ -10,6 +10,7 @@ class Url extends Model
 
     protected $fillable = [
         'url',
-        'viewPath'
+        'viewPath',
+        'name'
     ];
 }
